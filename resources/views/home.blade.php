@@ -1,3 +1,0 @@
-<x-home>
-
-</x-home>

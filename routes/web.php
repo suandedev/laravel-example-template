@@ -12,11 +12,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return view('dashboard');
+//});
+//Route::get('/', function () {
+//    return view('home');
+//});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//
+//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//    return view('dashboard');
+//})->name('dashboard');
 
 Route::get('/', function () {
-    return view('home');
+    return view('myTemplate.home');
 });
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/login', function () {
+   return view('myTemplate.login');
+});
