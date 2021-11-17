@@ -29,7 +29,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('myTemplate.home');
-});
+})->name('home');
 Route::get('/login', function () {
    return view('myTemplate.login');
-});
+})->name('login');
+Route::get('/register', function (){
+   return view('myTemplate.register');
+})->name('register');
+Route::get('/table', function (){
+   return view('myTemplate.table');
+})->name('table');

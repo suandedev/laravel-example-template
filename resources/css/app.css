@@ -2,3 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+.pagination {
+    @apply border rounded w-10 mx-1 hover:bg-indigo-50 text-gray-500;
+}
+
+.active {
+    @apply bg-indigo-50;
+}

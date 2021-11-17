@@ -1,13 +1,13 @@
 <x-auth-app>
 
-    <section class="bg-indigo-900 h-screen mx-auto pt-6 pb-6">
+    <section class="bg-indigo-900 min-h-screen mx-auto pt-6 pb-6">
         <main class="mx-auto max-w-md">
             {{-- logo auth--}}
             <x-auth-logo/>
             <form class="bg-indigo-50 rounded-lg  mt-6 p-8 " action="#">
                 {{-- title auth --}}
                 <x-title-auth>
-                    welcome back!
+                    Register Page!
                 </x-title-auth>
                 <div class="border-b-2 border-gray-400 w-16 opacity-50 mx-auto mt-6"></div>
                 {{-- input email --}}
@@ -48,25 +48,35 @@
                         </x-slot>
                     </x-input>
                 </div>
-                {{-- input checkbox --}}
+                {{-- input confirm password --}}
                 <div class="mt-6">
-                    <x-check-box>
-                        <x-slot name="id">
-                            check
+                    <x-label>
+                        <x-slot name="for">
+                            confirmPassword
                         </x-slot>
-                    </x-check-box>
+                        confirm password:
+                    </x-label>
+                    <x-input>
+                        <x-slot name="placeholder"></x-slot>
+                        <x-slot name="id">
+                            confirmPassword
+                        </x-slot>
+                        <x-slot name="type">
+                            password
+                        </x-slot>
+                    </x-input>
                 </div>
-                <div class="mt-2">
+                <div class="mt-6">
                     <x-label>
                         <x-slot name="for"></x-slot>
                         ready an account?
-                        <a class="text-indigo-500 hover:text-indigo-600 text-xs" href="{{route('register')}}">register</a>
+                        <a class="text-indigo-500 hover:text-indigo-600 text-xs" href="{{route('login')}}">login</a>
                     </x-label>
                 </div>
                 {{-- button login --}}
                 <div class="flex justify-end">
                     <x-button-auth>
-                        login
+                        Register
                     </x-button-auth>
                 </div>
             </form>
