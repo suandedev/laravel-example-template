@@ -40,5 +40,5 @@ Route::get('/table', function (){
    return view('myTemplate.table');
 })->name('table');
 Route::get('/input',  function () {
-    return view('myTemplate.input');
+    return view('myTemplate.input-form');
 })->name('input');

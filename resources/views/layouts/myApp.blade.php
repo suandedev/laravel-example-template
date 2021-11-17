@@ -22,7 +22,7 @@
     </header>
     <main class="flex flex-grow overflow-hidden">
         <x-nav-menu/>
-        <section class="bg-indigo-100 md:w-10/12 px-4 py-10 md:p-10 overflow-y-auto">
+        <section class="bg-indigo-100 w-full md:w-10/12 px-4 py-10 md:p-10 overflow-y-auto">
 
             {{$slot}}
 
