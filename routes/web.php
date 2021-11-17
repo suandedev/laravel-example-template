@@ -39,3 +39,6 @@ Route::get('/register', function (){
 Route::get('/table', function (){
    return view('myTemplate.table');
 })->name('table');
+Route::get('/input',  function () {
+    return view('myTemplate.input');
+})->name('input');
